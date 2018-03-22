@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(201,109,215,1);
+  background: -moz-linear-gradient(45deg, rgba(201,109,215,1) 0%, rgba(49,35,174,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(201,109,215,1)), color-stop(100%, rgba(49,35,174,1)));
+  background: -webkit-linear-gradient(45deg, rgba(201,109,215,1) 0%, rgba(49,35,174,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(201,109,215,1) 0%, rgba(49,35,174,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(201,109,215,1) 0%, rgba(49,35,174,1) 100%);
+  background: linear-gradient(45deg, rgba(201,109,215,1) 0%, rgba(49,35,174,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c96dd7', endColorstr='#3123ae', GradientType=1 );
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 3%;
+  align-self: center;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(80,0,151,0.56);
+  -moz-box-shadow: 10px 10px 15px 0px rgba(80,0,151,0.56);
+  box-shadow: 10px 10px 15px 0px rgba(80,0,151,0.56);}
+
+.login-form__body {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.login-form__header {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin-top: 3.7vh;
+}
+
+.login-form__header > .login-form__header__deco-text {
+  font-weight: 400;
+}
+
+.login-form__img-container {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  margin-top: 3vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;;
+  align-items: center;
+  justify-content: center;
+}
+
+.img__3 {
+  width: 19%;
+  margin-left: 0;
+}
+
+.img__1 {
+  width: 33%;
+  margin-left: -2vw;
+  z-index: 5;
+}
+
+.img__2 {
+  width: 19%;
+  margin-left: -2vw;
+}
+
+.login-form__form-container {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  margin-top: 1.7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  position: relative;
+}
+
+.form__img {
+  width: 5%;
+  margin-left: -1vw;
+}
+
+.form__input {
+  width: 73%;
+  border: none;
+  height: 5vh;
+  display: inline-block;
+  cursor:pointer;
+  z-index: 3;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+
+}
+
+.form__input:focus {
+  outline: none;
+  /* background-color: grey;
+  width: 90%; */
+}
+
+.line {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: #cfcfcf;
+  margin: 0 auto;
+}
+
+.form-btn-submit {
+  width: 90%;
+  height: 5vh;
+  -webkit-border-radius: 1vh;
+  border-radius: 1vh;
+  background-color: #bc68d4;
+  border: none;
+  margin-top: 0.3vh;
+  cursor:pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  animation: btnClickAnimation 2s ease-out;
+}
+
+.form-btn-submit:focus {
+  outline: none;
+}
+
+@keyframes btnClickAnimation {
+  from { background-color: #bc68d4; }
+  to { background-color: #5e136d; }
+}
+
+@-webkit-keyframes btnClickAnimation {
+  from { background-color: #bc68d4; }
+  to { background-color: #5e136d; }
+}
+
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
+  .login-form__img-container {
+    width: 80%;
+  }
+}
