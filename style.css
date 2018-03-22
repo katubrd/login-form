@@ -139,6 +139,10 @@ main {
   cursor:pointer;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  background-image: linear-gradient(to right top, #b564d2, #ba66d3, #be68d5, #c36bd6, #c76dd7);
+  -webkit-box-shadow: 3px 3px 17px 0px rgba(144,19,254,0.4);
+  -moz-box-shadow: 3px 3px 17px 0px rgba(144,19,254,0.4);
+  box-shadow: 3px 3px 17px 0px rgba(144,19,254,0.4);
   animation: btnClickAnimation 2s ease-out;
 }
 
@@ -154,13 +158,4 @@ main {
 @-webkit-keyframes btnClickAnimation {
   from { background-color: #bc68d4; }
   to { background-color: #5e136d; }
-}
-
-@media screen
-  and (device-width: 320px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 2) {
-  .login-form__img-container {
-    width: 80%;
-  }
 }
